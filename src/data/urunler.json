@@ -1,0 +1,71 @@
+[{
+        "id": 1,
+        "name": "Ferrari Tshirt",
+        "img": "https://images.esellerpro.com/2489/I/182/189/1/13010104-1.jpg",
+        "cost": "129.99",
+        "rating": "3.2"
+    },
+    {
+        "id": 2,
+        "name": "Max Verstappen Tshirt",
+        "img": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcR0jHL9xfs8nnmAYE1O8olW-CRvJK5-hnpSeXKsOLS5zwuX8YIm63Wp-dqNElxm04yUoOU1sRsaEytmYrlxAZPbqq9CLDDqxmdbdwJfmvMPjDyuYIjL64Da&usqp=CAE",
+        "cost": "199.99",
+        "rating": "3.2"
+
+    },
+    {
+        "id": 3,
+        "name": "Aston Martin Tshirt",
+        "img": "https://cdn.shopify.com/s/files/1/0448/5985/0917/products/AM21KTS01M_20_281_29_20copy_1024x1024.png?v=1614290610",
+        "cost": "59.99",
+        "rating": "3.2"
+    },
+    {
+        "id": 4,
+        "name": "Renault 2019 Tshirt",
+        "img": "https://images.esellerpro.com/2489/I/176/192/7/1910978-1.jpg",
+        "cost": "239.99",
+        "rating": "3.2"
+
+    },
+    {
+        "id": 5,
+        "name": "Mercedes 2021 TShirt",
+        "img": "https://images.footballfanatics.com/mercedes-amg-petronas-f1-team/mercedes-amg-petronas-f1-2021-team-t-shirt-white_ss4_p-12046184+pv-1+u-1ff5hcdom8wjmvk0ew3k+v-8df1ea698fd04edfb206823dbd4a7cc3.jpg?_hv=1&w=600",
+        "cost": "67.50",
+        "rating": "3.2"
+
+    },
+    {
+        "id": 6,
+        "name": "Mercedes 2014 Tshirt",
+        "img": "https://i.pinimg.com/originals/bd/50/cf/bd50cf7e5bf500224e7f6935bfc74fbb.jpg",
+        "cost": "60.99",
+        "rating": "3.2"
+
+    },
+    {
+        "id": 7,
+        "name": "Alpine 2021 Tshirt",
+        "img": "https://images.footballfanatics.com/alpine/alpine-f1-team-2021-alonso-t-shirt-kids_ss4_p-12053371+pv-1+u-wnv73cqteur2p3r15dgn+v-dd9459b52bf34879b37cb85eb81452ae.jpg?_hv=1&w=900",
+        "cost": "68.00",
+        "rating": "3.2"
+
+    },
+    {
+        "id": 8,
+        "name": "Mclaren 2020 Tshirt",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/817hPa3CzwL._AC_UX385_.jpg",
+        "cost": "59.99",
+        "rating": "3.2"
+
+    },
+    {
+        "id": 9,
+        "name": "Alfa Romeo Tshirt",
+        "img": "https://carsandwear.com/wp-content/uploads/2019/09/a4d4ac43-073d-442a-808c-66b60a7bf4d2.jpg",
+        "cost": "59.99",
+        "rating": "3.2"
+
+    }
+]

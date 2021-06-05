@@ -1,0 +1,63 @@
+.fav-page-title {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.fav-items-container {
+    /* border: 3px solid black; */
+    border-radius: 30px;
+    padding: 30px 30px;
+    margin-bottom: 150px;
+}
+
+.fav-item {
+    /* border: 3px solid salmon; */
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    margin: 30px 10px;
+    padding: 20px;
+    margin: 5vh 5vw;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+    flex-basis: 0;
+}
+
+.fav-items-left {
+    margin: 0;
+    padding: -100px;
+    flex-basis: 25%;
+    flex-grow: 0;
+}
+
+.fav-items-right {
+    float: right;
+    flex-basis: 0;
+    font-size: 1.15rem;
+    flex-basis: 25%;
+    flex-grow: 0;
+}
+
+.fav-item-img {
+    max-width: 150%;
+    max-height: 100%;
+    border-radius: 8px;
+}
+
+.fav-item-name {
+    color: rgb(47, 0, 255);
+    text-decoration: none;
+}
+
+.fav-item-link {
+    text-decoration: none;
+}
+
+.fav-item-link:hover {
+    color: brown;
+}
+
+.fav-item-cost {
+    font-style: italic;
+}

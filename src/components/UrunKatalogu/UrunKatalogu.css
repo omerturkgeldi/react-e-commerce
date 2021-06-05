@@ -1,0 +1,61 @@
+.items-page-title {
+    /* background-color: blueviolet;
+    color: white; */
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.items-container {
+    /* background-color: red; */
+    /* background-color: rgb(255, 236, 211); */
+    background-image: linear-gradient(to right top, rgba(5, 25, 55, .7), rgba(0, 77, 122, .7), rgba(0, 135, 147, .7), rgba(0, 191, 114, .7), rgba(168, 235, 18, .7));
+    border-radius: 20px;
+}
+
+.item-div {
+    /* position: relative; */
+    max-width: 94%;
+    /* background-color: green; */
+    /* background-color: rgb(255, 254, 254); */
+    background-color: #e7f0ec;
+    margin: 20px 20px;
+    padding: 20px 10px;
+    height: inherit;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 236, 211);
+    position: relative;
+}
+
+.row-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 50px 10px;
+}
+
+.item-image-container {
+    display: flex;
+    padding: 3px;
+}
+
+.item-image {
+    position: inherit;
+    max-width: 100%;
+    max-height: auto;
+    border-radius: 8px;
+}
+
+.item-name {
+    padding: 10px 0;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.item-infos {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+    margin-bottom: 50px;
+    font-style: italic;
+}
