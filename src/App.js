@@ -14,7 +14,7 @@ function App() {
         <Navbar></Navbar>
 
         <div>
-          <Route path="/home" component={UrunKatalogu} />
+          <Route path="/" component={UrunKatalogu} />
         </div>
         <div>
           <Route path="/detail/:id" component={UrunDetay} />
