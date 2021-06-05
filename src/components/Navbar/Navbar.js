@@ -5,7 +5,7 @@ function Navbar(props) {
     <div>
       <nav  class="navbar navbar-expand-md navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/home">
+          <a class="navbar-brand" href="/">
             Navbar
           </a>
           <button
@@ -23,7 +23,7 @@ function Navbar(props) {
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="/home">
+                <a class="nav-link" href="/">
                   Anasayfa
                 </a>
               </li>
