@@ -14,7 +14,7 @@ function App() {
         <Navbar></Navbar>
 
         <div>
-          <Route path="/" component={UrunKatalogu} />
+          <Route path="/" exact component={UrunKatalogu} />
         </div>
         <div>
           <Route path="/detail/:id" component={UrunDetay} />
