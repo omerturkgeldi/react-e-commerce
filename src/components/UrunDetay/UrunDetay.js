@@ -7,7 +7,7 @@ function UrunDetay(props) {
   console.log(props);
   // console.log(urunler)
   const specific_item = urunler.filter(
-    (urun) => urun.id == props.match.params.id
+    (urun) => urun.id === props.match.params.id
   );
   console.log(specific_item);
   return (
