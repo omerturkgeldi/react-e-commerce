@@ -6,8 +6,12 @@ import Sepet from "./components/Sepet/Sepet";
 import Iletisim from "./components/Iletisim/Iletisim";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
+
 
 function App() {
+
+
   return (
     <div>
       <Router>
@@ -29,9 +33,10 @@ function App() {
           <Route path="/contact" component={Iletisim} />
         </div>
       </Router>
+
+      <Footer />
     </div>
   );
 }
 
 export default App;
-
