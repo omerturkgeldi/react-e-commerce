@@ -1,27 +1,32 @@
 // import React, { useState, useEffect } from "react";
 import "./UrunKatalogu.css";
 import { Button } from "../../Button.style";
-import urunler from "../../data/urunler.json";
+// import urunler from "../../data/urunler.json";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
-function UrunKatalogu(props) {
+
+
+
+function UrunKatalogu({ products, onAdd, onAddFavourites, onRemoveFavourites }) {
+
+
   const [data, setData] = useState([]);
-  useEffect(() => {
-    const getApi = async () => {
-      try {
-        const response = await axios.get("https://fakestoreapi.com/products");
-        setData(response.data);
-      } catch (error) {
-        console.log(error);
-      }
-    };
-    getApi();
-  }, []);
+  // useEffect(() => {
+  //   const getApi = async () => {
+  //     try {
+  //       const response = await axios.get("https://fakestoreapi.com/products");
+  //       setData(response.data);
+  //     } catch (error) {
+  //       console.log(error);
+  //     }
+  //   };
+  //   getApi();
+  // }, []);
 
-  console.log(data);
+  console.log(products);
 
-  console.log(urunler);
+  // console.log(urunler);
 
   const [favourite, setFavourite] = useState(false);
   const [cart, setCart] = useState(false);
@@ -32,57 +37,37 @@ function UrunKatalogu(props) {
 
   // }
 
-  const handleFavourites = () => {
+  // const handleFavourites = () => {
+  //   setFavourite(!favourite);
+  //   console.log(favourite);
+  //   if (favourite) {
+  //     favouriteItems.push();
+  //   } else {
+  //     favouriteItems.push();
+  //   }
+  // };
+
+  // onClick={() => favourite ? onRemoveFavourites(urun) && setFavourite(!favourite)  : onAddFavourites(urun) && //setFavourite(!favourite)}
+
+  const handleFavourites = (urun) =>  {
     setFavourite(!favourite);
-    console.log(favourite);
-    if (favourite) {
-      favouriteItems.push();
-    } else {
-      favouriteItems.push();
+    if(favourite){
+      onAddFavourites(urun)
+    }else{
+      onRemoveFavourites(urun);
     }
-  };
+  }
+
 
   return (
     <div className="container">
       <h1 className="items-page-title">Ürünlerimiz</h1>
-      {/* 
-      <div className="container items-container">
-        <div className="row row-container">
-          {urunler.map((urun) => {
-            return (
-              <>
-                <div key={urun.id} class="col-lg-3 col-md-5 item-div">
-                  <div className="item-image-container">
-                    <img
-                      className="item-image"
-                      src={urun.img}
-                      alt={urun.name}
-                    />
-                  </div>
-                  <h6 className="item-name">{urun.name}</h6>
-                  <div className="item-infos">
-                    <h4 className="item-cost">
-                      {urun.cost} <span>₺</span>
-                    </h4>
-                    <h6 className="item-moreInfo">
-                      <a href="/details">
-                        <Link className="fa v-item-link" to={`/detail/${urun.id}`}>Detaylar...</Link>
-                      </a>
-                    </h6>
-                  </div>
-                  <Button backgroundColor="red">Sepete Ekle</Button>
-                </div>
-              </>
-            );
-          })}
-        </div>
-      </div> */}
 
       <div class="container pt-3">
         <div class="row mt-5">
-          {urunler.map((urun) => {
+          {products.map((urun) => {
             return (
-              <div class="col-lg-4 col-md-6 col-sm mb-5 mt-5 ">
+              <div key={urun.id} class="col-lg-4 col-md-6 col-sm mb-5 mt-5 ">
                 <div
                   class="card d-flex p-4 ml-4 mr-4 align-it ems-center"
                   style={{ border: "none" }}
@@ -120,14 +105,16 @@ function UrunKatalogu(props) {
                     </h4>
                     <div className="buttons d-flex justify-content-space-between">
                       <button
+                        onClick={() => onAdd(urun)}
                         className="btn btn-light "
                         style={{ width: "45%" }}
                       >
                         <i class="fas fa-lg fa-shopping-cart"></i>
                       </button>
                       <button
-                        key={urun.id}
-                        onClick={handleFavourites}
+                        // key={urun.id}
+                        onClick={ () => handleFavourites(urun)}
+                        // onClick={() => favourite ? onRemoveFavourites(urun) && setFavourite(!favourite)  : onAddFavourites(urun) && setFavourite(!favourite)}
                         className="btn btn-warning"
                         style={{ width: "45%" }}
                       >
